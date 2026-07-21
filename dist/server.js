@@ -31,7 +31,7 @@ if (missing.length) {
 const app = (0, express_1.default)();
 // ─── Security middleware ──────────────────────────────────────────────────────
 app.use((0, helmet_1.default)());
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000')
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'https://skillpilot-ai-client.vercel.app')
     .split(',')
     .map((o) => o.trim());
 app.use((0, cors_1.default)({
