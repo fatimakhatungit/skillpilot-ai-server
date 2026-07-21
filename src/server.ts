@@ -36,7 +36,7 @@ const app = express();
 
 app.use(helmet());
 
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'https://skillpilot-ai-client.vercel.app')
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000/')
   .split(',')
   .map((o) => o.trim());
 
